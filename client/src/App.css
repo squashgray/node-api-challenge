@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.project {
+  text-decoration: none;
+}
