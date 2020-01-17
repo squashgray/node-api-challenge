@@ -1,12 +1,73 @@
+
+
 .App {
   text-align: center;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5%;
+
 }
 
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 90px;
+  margin: 0 auto;
+  width: 50%;
+  background-image: radial-gradient( circle 997px at 5.8% 11.8%,  rgba(0,201,235,1) 0%, rgba(145,0,228,1) 90% );
+  padding: 3%;
+  color:  white;
+  border-radius: 20px;
+  border-bottom: solid 1px black;
+}
+
+.projectcontainer {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(102,183,220,1) 0%, rgba(78,244,248,1) 100.2% );
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 20px;
+
+}
+
+.projectlist {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  border: 1px solid black;
+  padding: 3%;
+  border-radius: 20px;
+  background-color: azure;
+  
+}
+
+.projectlist:hover{
+  background-color:  lightyellow;
+}
+ 
 .project {
   text-decoration: none;
+    margin-top: 10%;
+  margin-bottom: 10%;
+}
+.projects {
+  text-decoration: none;
+}
+
+.actionlist {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 16%;
+  border: 1px solid black;
+  padding: 3%;
+  border-radius: 20px;
+  background-color: rgb(49, 58, 58);
+  color: white;
+  
 }

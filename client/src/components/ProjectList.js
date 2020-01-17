@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function ProjectList(props) {
   const [projects, setProjects] = useState([]);
-  const [display, setDisplay] = useState(false);
+  const [display] = useState(false);
 
   useEffect(() => {
     axios
@@ -19,20 +19,21 @@ export default function ProjectList(props) {
       });
   }, []);
   return (
-    <div>
+    <div className="projectcontainer">
       {projects.map(project => (
-        <div>
-          <Link to={`/project/${project.id}`} 
+        <div className="projectlist">
+          <Link
+            to={`/project/${project.id}`}
             color="textPrimary"
             className="project"
           >
             {project.name}
           </Link>
-          {display ? 
+          {display ? (
             <ProjectCard key={project.id} project={project} />
-           : 
+          ) : (
             <div></div>
-          }
+          )}
         </div>
       ))}
     </div>

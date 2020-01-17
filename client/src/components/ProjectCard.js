@@ -15,7 +15,8 @@ const useStyles = makeStyles({
   },
 
   title: {
-    fontSize: 14
+    fontSize: 14,
+    borderBottom: 1
   },
   pos: {
     marginBottom: 12
@@ -41,20 +42,10 @@ export default function ProjectCard(props) {
 
 
   return (
-    <div>
+    <div className="projectcontainer">
       <Card className={classes.card} variant="outlined">
         <CardContent>
-          <Typography
-            className={classes.title}
-            color="textSecondary"
-            gutterBottom
-          >
-            Project Name
-          </Typography>
-          <Typography variant="h5" component="h2">
-            {project.name}
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
+          <Typography variant="h5" component="h2" gutterBottom>
             Project Description
           </Typography>
           <Typography variant="body2" component="p">
@@ -74,7 +65,7 @@ export default function ProjectCard(props) {
           </Button>
           {display ? <ActionCard id={project.id} /> : <div></div>}
           <Button>
-            <Link to="/" className="project">
+            <Link to="/" className="projects">
               Back to Project List
             </Link>
           </Button>

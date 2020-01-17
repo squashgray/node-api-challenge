@@ -4,6 +4,9 @@
 # VSCode settings
 .vscode/
 
+#enviroment
+.env
+
 # Logs
 logs
 *.log

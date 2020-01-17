@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     minWidth: 275
   },
   title: {
-    fontSize: 14
+    fontSize: 25
   },
   pos: {
     marginBottom: 12
@@ -34,31 +34,17 @@ export default function ActionsCard(props) {
   }, [props.id]);
 
   return (
-    <Card className={classes.card}>
-      <div>
+    <Card className="actionlist">
+      <div className="actionlist">
         {actions.map(action => (
           <CardContent key={action.id}>
-            <Typography
-              className={classes.title}
-              color="textSecondary"
-              gutterBottom
-            >
-              Action Description
-            </Typography>
-            <Typography variant="h5" component="h2">
-              {" "}
+            <Typography variant="h5" component="h2" className={classes.title}>
               {action.description}
             </Typography>
-            <Typography
-              className={classes.title}
-              color="textSecondary"
-              gutterBottom
-            >
-              Notes
+            <Typography variant="body2" component="p" className={classes.title}>
+              - Notes -
             </Typography>
-            <Typography variant="body2" component="p">
-              {action.notes}
-            </Typography>
+            <Typography gutterBottom>{action.notes}</Typography>
           </CardContent>
         ))}
       </div>
